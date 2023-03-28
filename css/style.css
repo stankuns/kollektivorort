@@ -1,0 +1,484 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    font-size: 1em;
+    overflow-y: scroll;
+}
+
+.hero__text{
+    line-height: 1.35rem;
+}
+
+.smaller__font {
+    font-size: smaller;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.9rem;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.legend__font {
+    font-size: 0.71em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    display: block;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:focus,
+a:hover {
+    text-decoration:underline;
+}
+
+header {
+    background-color: white; 
+    padding: 0.75em 0 1.65em 0;
+    text-align: left;
+}
+
+.logo_inicial {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    color: black;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    transition: opacity 250ms ease;
+    position: absolute;
+    right: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background-color: black;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1.25rem;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav__item {
+    margin-top: .5em;
+}
+
+.nav__link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .65;
+}
+
+.logo {
+    height: 30px;
+    align-items: left;
+}
+
+.hero {
+    padding: 1rem 0;
+    background-color: white;
+    color: black;
+}
+
+.hero p {
+    margin-bottom: 1.5em;
+}
+
+.kontakt {
+    background: white;
+    color: black;
+    min-height: 70vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.kontakt__info {
+    margin-top: 0;
+}
+
+.main {
+    margin-top: 0em;
+    
+}
+
+.sidebar {
+    padding-bottom: 1rem;
+    text-align: left;
+    margin-top: 0;
+}
+
+.sidebar__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.centralbar__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title {
+    color: #535253;
+}
+
+.section__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.section__list li {
+    padding-bottom: 1rem;
+}
+
+.section__list2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.section__list2 li {
+    padding-bottom: 1rem;
+}
+
+.wir {
+    color: black
+} 
+
+.aktionsfelder {
+    color: black;
+}
+
+.hero__image {
+    display: none;
+    text-align: right;
+}
+
+.hero__image2 {
+    display: block;
+    text-align: right;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+.team__angelika {
+    display: none;
+    font-size: 0.9rem;
+}
+
+.team__andrea {
+    display: none;
+    font-size: 0.9rem;
+}
+
+.team__richard {
+    display: none;
+    font-size: 0.9rem;
+}
+
+#next__column {
+    display: none;
+}
+
+
+.lehre_d__row {
+    display: none;
+}
+
+.lehre_d {
+    display: none;
+}
+
+.lehre_m {
+    display: block;
+}
+
+
+
+
+
+/* ///////////////////// */
+/* mediaquery BIG SCREEN */
+@media (min-width: 600px) {
+
+    .hero__text {
+        font-size: 1em;
+        line-height: 1.35em;
+    }
+
+    .smaller__font {
+        font-size: 0.85rem;
+    }
+
+    .emphasis {
+        letter-spacing: 0.05em;
+    } 
+
+    .legend__font {
+        font-size: 0.71em;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section__list {
+        width: 32%;
+    }
+
+    .section__list2 {
+        width: 49%;
+        font-size: 1em;
+        min-width: 400px;
+    }
+
+    .arch {
+        display: flex;
+        
+    }
+
+    .arch__col1 {
+        width: 29%;
+        margin-right: 1em;   
+    }
+
+    .arch__col2 {
+        width: 69%;
+        margin-left: 1em;
+    }
+
+    .arch__col3 {
+        width: 49%;
+        margin-right: 2em;
+    }
+
+    .arch__col4 {
+        width: 49%;
+    }
+
+    .publi {
+        display: flex;
+    }
+
+    .publi__col {
+        width: 33%;   
+    }
+
+    .publi__col + .publi__col {
+        margin-left: 2em;
+    }
+
+    .lehre_m {
+        display: none;
+    }
+
+    .lehre_m__col {
+        display: none;
+    }
+
+    .lehre_d {
+        display: flex;
+    }
+
+    .lehre_d__row {
+        display: flex;
+        padding-bottom: 1em;
+    }
+
+    .lehre_d__col {
+        width: 33%;
+    }
+
+    .lehre_d__col + .lehre_d__col {
+        margin-left: 2em;
+    }
+
+    .logo_mobile {
+        display: none;
+    }
+
+    .logo_inicial {
+        display: block;
+        max-width: 171px;
+        max-height: 45px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: auto;
+        position: relative;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item {
+        margin: 0 0 0 3.25em;
+    }
+
+    .nav__link {
+        font-size: 0.85em; 
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__img {
+        width: 32%;
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    .primary-content {
+        width: 75%;
+        max-width: 1000px;
+        margin-bottom: 1em;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .sidebar__item {
+        margin-bottom: 0.85em;
+    }
+    
+    .section__list + .section__list {
+        margin-left: 2em;
+    }
+
+    .section__list2 + .section__list2 {
+        margin-left: 4em;
+    }
+
+    #next__column {
+        display: block;
+        text-align: right;
+    }
+
+} 
+
+
